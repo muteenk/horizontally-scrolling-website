@@ -1,0 +1,60 @@
+
+/* Universal CSS  */
+
+
+/* Font imported from font awesome  */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-style: 'Open Sans', sans-serif;
+}
+
+/* Variables  */
+
+:root{
+    --pri-color: red;
+    --pri-hover: rgb(153, 1, 1);
+    --sec-color: rgb(184, 184, 184);
+    --ter-color: black;
+    --pri-font: 'Open Sans', sans-serif;
+}
+
+
+/* Navbar Design */
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 0px;
+    height: 100vh;
+    width: 3em;
+    padding: 10px;
+    background: var(--pri-color);
+}
+
+
+nav .nav-item{
+    list-style: none;
+    margin: 70px auto;
+}
+
+nav .active a{
+    background: var(--pri-hover);
+}
+
+nav .nav-item a{
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+    border-radius: 30%;
+}
+
+nav .nav-item a:hover{
+    background: var(--pri-hover);
+}
