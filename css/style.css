@@ -8,11 +8,18 @@
 *{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 
 body{
     font-family: 'Open Sans', sans-serif;
+    overflow-y: hidden;
+}
+
+.main-head{
+    color: rgb(0, 0, 0);
+    font-size: 70px;
 }
 
 /* Variables  */
@@ -34,9 +41,14 @@ header{
     flex-direction: row;
     justify-content: start;
     align-items: center;
+    position: fixed;
+    top: 0px;
+    width: 100%;
     height: 3em;
-    box-shadow: 2px 2px 5px var(--sec-color);
+    box-shadow: 10px 2px 15px black;
     padding: 10px;
+    z-index: 2;
+    background-color: white;
 }
 
 header .head-items{
@@ -64,11 +76,13 @@ nav{
     align-items: center;
     justify-content: center;
     position: fixed;
+    top: 0px;
     left: 0px;
     height: 100vh;
     width: 3em;
     padding: 10px;
     background: var(--pri-color);
+    z-index: 1;
 }
 
 
@@ -91,4 +105,112 @@ nav .nav-item a:hover{
 
 
 
+/* this is the main scrolling element */
+
+
+#main-body {
+    margin: 70px 0px 0px 68px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* white-space: nowrap; */
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 100vh;
+    width:fit-content;
+    z-index: 0;
+}
+
+
+
+#main-body .page{
+    height: 100%;
+    width: 100vw;
+}
+
+
+
+
 /* Home Page Design */
+
+.home-title{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/backgrounds/home-background.jpg) no-repeat center center/cover;
+}
+
+.home-title h1{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 90px;
+    font-size: 100px;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+}
+
+.home-title .move-btn{
+    background-color: red;
+    color: white;
+    padding: 20px 25px;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    border-radius: 50%;
+}
+
+.home-title .move-btn:hover{
+    background-color: var(--pri-hover);
+}
+
+
+
+
+/* Cards Page Design  */
+
+
+
+.home-cards .card-grid{
+    display: grid;
+    border: 2px solid black;
+    width: 80%;
+}
+
+.home-cards .card-grid .card{
+    width: 200px;
+    
+}
+
+.home-cards .card-grid .card .card-img{
+
+}
+
+.home-cards .card-grid .card .card-title{
+
+}
+
+.home-cards .card-grid .card .card-tag{
+
+}
+
+.home-cards .card-grid .card .card-desc{
+
+}
+
+.home-cards .card-grid .card button{
+
+}
+
+
+
+
+/* Slogan Design  */
+
+.slogan{
+    position: fixed;
+    top: 90%;
+    left: 90%;
+    background-color: rgba(0, 0, 0, 0.486);
+    color: white; 
+    padding: 10px;
+    border-radius: 50px;
+}
