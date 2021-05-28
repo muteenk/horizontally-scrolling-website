@@ -22,12 +22,17 @@ body{
     font-size: 70px;
 }
 
+.secondary-head{
+    color: black;
+    font-size: 50px;
+}
+
 /* Variables  */
 
 :root{
     --pri-color: red;
     --pri-hover: rgb(153, 1, 1);
-    --sec-color: rgb(184, 184, 184);
+    --sec-color: rgb(85, 85, 85);
     --ter-color: black;
     --pri-font: 'Open Sans', sans-serif;
 }
@@ -117,16 +122,17 @@ nav .nav-item a:hover{
     /* white-space: nowrap; */
     overflow-x: auto;
     overflow-y: hidden;
-    height: 100vh;
-    width:fit-content;
+    height: auto;
+    width:max-content;
     z-index: 0;
 }
 
 
 
 #main-body .page{
-    height: 100%;
+    height: 91vh;
     width: 100vw;
+    /* padding: 50px; */
 }
 
 
@@ -167,37 +173,62 @@ nav .nav-item a:hover{
 
 /* Cards Page Design  */
 
+.home-cards{
+    width: max-content;
+}
 
 
 .home-cards .card-grid{
     display: grid;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     width: 80%;
+    margin: 20px auto;
+    grid-template-columns: repeat(4, minmax(270px, 1fr));
+    /* grid-template-rows: repeat(2, max-content); */
 }
 
 .home-cards .card-grid .card{
-    width: 200px;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    width: 270px;
+    box-shadow: 1px 1px 5px rgb(105, 105, 105);
+    border-radius: 5px;
+    margin: 10px 10px;
 }
 
-.home-cards .card-grid .card .card-img{
-
+.home-cards .card-grid .card .card-img img{
+    height: 187px;
 }
 
 .home-cards .card-grid .card .card-title{
-
+    font-size: 20px;
+    font-weight: 900;
 }
 
 .home-cards .card-grid .card .card-tag{
-
+    width: 100%;
+    color: var(--sec-color);
 }
 
 .home-cards .card-grid .card .card-desc{
-
+    width: 100%;
+    font-size: 12px;
 }
 
 .home-cards .card-grid .card button{
+    color: white;
+    background: var(--pri-color);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50px;
+    width: 50%;
+}
 
+.home-cards .card-grid .card button:hover{
+    background: linear-gradient(to right, var(--pri-color), rgb(255, 0, 98), rgb(204, 204, 204));
 }
 
 
@@ -213,4 +244,34 @@ nav .nav-item a:hover{
     color: white; 
     padding: 10px;
     border-radius: 50px;
+}
+
+
+
+
+
+/* About Design  */
+
+.home-about main{
+    margin: auto 100px;
+}
+
+.home-about .para{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+
+.home-about .para .para-img img{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+.home-about .para p{
+    margin: 20px;
 }
