@@ -228,7 +228,7 @@ nav .nav-item a:hover{
 }
 
 .home-cards .card-grid .card button:hover{
-    background: linear-gradient(to right, var(--pri-color), rgb(255, 0, 98), rgb(204, 204, 204));
+    background: var(--pri-hover);
 }
 
 
@@ -238,7 +238,7 @@ nav .nav-item a:hover{
 
 .slogan{
     position: fixed;
-    top: 90%;
+    top: 95%;
     left: 90%;
     background-color: rgba(0, 0, 0, 0.486);
     color: white; 
@@ -274,4 +274,69 @@ nav .nav-item a:hover{
 
 .home-about .para p{
     margin: 20px;
+}
+
+
+
+/* Contact Page design  */
+
+.home-contact .contact-form{
+    width: 80%;
+    margin: auto auto;
+}
+
+.home-contact .contact-form .form-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    margin: 50px auto;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px var(--sec-color);
+}
+
+.home-contact .contact-form .form-body .input-field{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin: 10px auto;
+}
+
+.home-contact .contact-form .form-body .input-field label{
+    font-weight: 900;
+    margin: 10px 0px;
+}
+
+.home-contact .contact-form .form-body .input-field input{
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid var(--sec-color);
+}
+
+.home-contact .contact-form .form-body .input-field textarea{
+    width: 460px;
+    height: 140px;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid var(--sec-color);
+    resize: none;
+    font-family: var(--pri-font);
+    overflow: auto;
+}
+
+.home-contact .contact-form .form-body button{
+    width: 80%;
+    margin: 15px auto;
+    padding: 12px;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--pri-color);
+    color: white;
+    cursor: pointer;
+}
+
+.home-contact .contact-form .form-body button:hover{
+    background-color: var(--pri-hover);
 }
