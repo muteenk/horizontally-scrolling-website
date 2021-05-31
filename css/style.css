@@ -340,3 +340,63 @@ nav .nav-item a:hover{
 .home-contact .contact-form .form-body button:hover{
     background-color: var(--pri-hover);
 }
+
+
+
+
+
+/* Clients Page Design  */
+
+.home-clients{
+    
+}
+
+.home-clients main{
+    width: 80%;
+    margin: auto auto;
+}
+
+.home-clients main .client-grid{
+    display: grid;
+    /* border: 2px solid black; */
+    width: 100%;
+    margin: 20px auto;
+    grid-template-columns: repeat(4, minmax(270px, 1fr));
+    /* grid-template-rows: repeat(2, max-content); */
+}
+
+.home-clients main .client-grid .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    width: 270px;
+    box-shadow: 1px 1px 5px rgb(105, 105, 105);
+    border-radius: 5px;
+    margin: 10px 10px;
+
+}
+
+.home-clients main .client-grid .card .card-item{
+    margin: 6px auto;
+}
+
+.home-clients main .client-grid .card .card-img img{
+    height: 140px;
+    width: 140px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.home-clients main .client-grid .card h3{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.home-clients main .client-grid .card p{
+    width: 100%;
+    font-size: 12px;
+}
