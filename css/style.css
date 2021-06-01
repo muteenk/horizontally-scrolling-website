@@ -1,9 +1,14 @@
 
-/* Universal CSS  */
+/* -----------------
+
+global CSS  
+
+--------------------*/
 
 
-/* Font imported from font awesome  */
+/* Font imported from google fonts -> Open Sans 400  */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 
 *{
     margin: 0;
@@ -39,7 +44,11 @@ body{
 
 
 
-/* Header Design  */
+/* --------------------
+
+Header Design  
+
+---------------------*/
 
 header{
     display: flex;
@@ -73,7 +82,11 @@ header .side-bar-btn{
 
 
 
-/* Navbar Design */
+/*---------------------
+
+Navbar Design 
+
+----------------------*/
 
 nav{
     display: flex;
@@ -110,7 +123,15 @@ nav .nav-item a:hover{
 
 
 
-/* this is the main scrolling element */
+
+
+
+
+/*-------------------------------
+
+ main scrolling element 
+ 
+ -------------------------------*/
 
 
 #main-body {
@@ -138,7 +159,11 @@ nav .nav-item a:hover{
 
 
 
-/* Home Page Design */
+/* ---------------------- 
+
+Home Page Design 
+
+-----------------------*/
 
 .home-title{
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/backgrounds/home-background.jpg) no-repeat center center/cover;
@@ -171,7 +196,11 @@ nav .nav-item a:hover{
 
 
 
-/* Cards Page Design  */
+/* --------------------
+
+Cards Page Design  
+
+----------------------*/
 
 .home-cards{
     width: max-content;
@@ -180,11 +209,9 @@ nav .nav-item a:hover{
 
 .home-cards .card-grid{
     display: grid;
-    /* border: 2px solid black; */
     width: 80%;
     margin: 20px auto;
     grid-template-columns: repeat(4, minmax(270px, 1fr));
-    /* grid-template-rows: repeat(2, max-content); */
 }
 
 .home-cards .card-grid .card{
@@ -234,7 +261,11 @@ nav .nav-item a:hover{
 
 
 
-/* Slogan Design  */
+/*---------------
+
+Slogan Design  
+
+---------------*/
 
 .slogan{
     position: fixed;
@@ -250,7 +281,11 @@ nav .nav-item a:hover{
 
 
 
-/* About Design  */
+/* ------------------
+
+About Design  
+
+-------------------*/
 
 .home-about main{
     margin: auto 100px;
@@ -278,7 +313,13 @@ nav .nav-item a:hover{
 
 
 
-/* Contact Page design  */
+
+
+/*-----------------------
+
+Contact Page design  
+
+-----------------------*/
 
 .home-contact .contact-form{
     width: 80%;
@@ -345,11 +386,13 @@ nav .nav-item a:hover{
 
 
 
-/* Clients Page Design  */
+/*-------------------- 
 
-.home-clients{
-    
-}
+Clients Page Design  
+
+---------------------*/
+
+
 
 .home-clients main{
     width: 80%;
@@ -358,11 +401,9 @@ nav .nav-item a:hover{
 
 .home-clients main .client-grid{
     display: grid;
-    /* border: 2px solid black; */
     width: 100%;
     margin: 20px auto;
     grid-template-columns: repeat(4, minmax(270px, 1fr));
-    /* grid-template-rows: repeat(2, max-content); */
 }
 
 .home-clients main .client-grid .card{
