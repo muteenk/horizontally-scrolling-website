@@ -5,3 +5,5 @@ I saw this innovative idea online of an Horizontal website, I was amazed by this
 I didn't made the website responsive as i planned it to be a desktop specific website
 
 I built a fake stationary store website (but horizontally), it was totally fun check it out...  
+
+Thank You
